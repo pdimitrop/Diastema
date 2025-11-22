@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>1.0.25317.2223</AssemblyVersion>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <FileVersion>1.0.25326.1901</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\assets\AT.png" />
+    <None Remove="src\assets\DK.png" />
+    <None Remove="src\assets\KM.png" />
+    <None Remove="src\assets\laspi.png" />
+    <None Remove="src\assets\mud.png" />
+    <None Remove="src\assets\NA.png" />
+    <None Remove="src\assets\ZK.png" />
+    <None Remove="src\bgm\explosion.wav" />
+    <None Remove="src\bgm\sample.wav" />
+    <None Remove="src\bgm\shoot.wav" />
+    <None Remove="src\img\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="src\assets\AT.png" />
+    <Resource Include="src\assets\DK.png" />
+    <Resource Include="src\assets\KM.png" />
+    <Resource Include="src\assets\laspi.png" />
+    <Resource Include="src\assets\mud.png" />
+    <Resource Include="src\assets\NA.png" />
+    <Resource Include="src\assets\ZK.png" />
+    <Resource Include="src\bgm\explosion.wav" />
+    <Resource Include="src\bgm\sample.wav" />
+    <Resource Include="src\bgm\shoot.wav" />
+    <Resource Include="src\img\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
