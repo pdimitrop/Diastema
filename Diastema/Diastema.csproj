@@ -9,6 +9,7 @@
     <AssemblyVersion>1.0.25317.2223</AssemblyVersion>
     <Platforms>AnyCPU;x64;x86</Platforms>
     <FileVersion>1.0.25326.1941</FileVersion>
+    <ApplicationIcon>src\img\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,6 +36,10 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="src\img\icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
