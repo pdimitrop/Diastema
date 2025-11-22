@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyVersion>1.0.25317.2223</AssemblyVersion>
     <Platforms>AnyCPU;x64;x86</Platforms>
-    <FileVersion>1.0.25326.1941</FileVersion>
+    <FileVersion>1.0.25326.1945</FileVersion>
     <ApplicationIcon>src\img\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
