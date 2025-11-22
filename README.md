@@ -5,7 +5,7 @@ Diastema is a [Laspi](https://www.laspi.gr/)-inspired video game, modelled after
 Hellenic (el-GR)
 
 # Installation
-Just run the .exe file.
+Just download and run the .exe file.
 
 # Controls
 Movement with arrows or WASD.<br/>Press 'SPACE' to pause.
