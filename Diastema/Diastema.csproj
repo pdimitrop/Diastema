@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyVersion>1.0.25317.2223</AssemblyVersion>
     <Platforms>AnyCPU;x64;x86</Platforms>
-    <FileVersion>1.0.25326.1945</FileVersion>
+    <FileVersion>1.0.25337.1909</FileVersion>
     <ApplicationIcon>src\img\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
@@ -19,10 +19,12 @@
     <None Remove="src\assets\laspi.png" />
     <None Remove="src\assets\mud.png" />
     <None Remove="src\assets\NA.png" />
+    <None Remove="src\assets\r01.gif" />
     <None Remove="src\assets\ZK.png" />
     <None Remove="src\bgm\explosion.wav" />
     <None Remove="src\bgm\sample.wav" />
     <None Remove="src\bgm\shoot.wav" />
+    <None Remove="src\font\maassslicer.italic.ttf" />
     <None Remove="src\img\icon.ico" />
   </ItemGroup>
 
@@ -39,20 +41,48 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="src\img\icon.ico" />
+    <Content Include="src\assets\r01.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\font\maassslicer.italic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\img\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="src\assets\AT.png" />
-    <Resource Include="src\assets\DK.png" />
-    <Resource Include="src\assets\KM.png" />
-    <Resource Include="src\assets\laspi.png" />
-    <Resource Include="src\assets\mud.png" />
-    <Resource Include="src\assets\NA.png" />
-    <Resource Include="src\assets\ZK.png" />
-    <Resource Include="src\bgm\explosion.wav" />
-    <Resource Include="src\bgm\sample.wav" />
-    <Resource Include="src\bgm\shoot.wav" />
+    <Content Include="src\assets\AT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\assets\DK.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\assets\KM.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\assets\laspi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\assets\mud.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\assets\NA.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\assets\ZK.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\bgm\explosion.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\bgm\sample.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\bgm\shoot.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Resource Include="src\img\icon.ico" />
   </ItemGroup>
 

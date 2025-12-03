@@ -50,7 +50,7 @@
             lblCredits.ForeColor = SystemColors.Control;
             lblCredits.Location = new Point(12, 122);
             lblCredits.Name = "lblCredits";
-            lblCredits.Size = new Size(860, 210);
+            lblCredits.Size = new Size(860, 225);
             lblCredits.TabIndex = 1;
             lblCredits.Text = resources.GetString("lblCredits.Text");
             // 
@@ -59,7 +59,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 0, 64);
-            ClientSize = new Size(884, 341);
+            ClientSize = new Size(884, 355);
             Controls.Add(lblCredits);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");

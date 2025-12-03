@@ -1,4 +1,5 @@
-﻿using WMPLib;
+﻿using System.Drawing.Text;
+using WMPLib;
 
 namespace Diastema
 {
@@ -9,25 +10,27 @@ namespace Diastema
         WindowsMediaPlayer explosion;
 
         PictureBox[] enemiesMun;
-        int enemiesMunSpeed;
+        private int enemiesMunSpeed;
 
         PictureBox[] stars;
-        int bgSpeed;
-        int plSpeed;
+        private int bgSpeed;
+        private int plSpeed;
 
         PictureBox[] munitions;
-        int munSpeed;
+        private int munSpeed;
 
         PictureBox[] enemies;
-        int enemySpeed;
+        private int enemySpeed;
 
         Random rand;
 
-        int score;
-        int level;
-        int difficulty;
-        bool pause;
-        bool gameOver;
+        private int score;
+        private int level;
+        private int difficulty;
+        private bool pause;
+        private bool gameOver;
+
+        PrivateFontCollection fonts;
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         internal MainForm()
@@ -44,6 +47,15 @@ namespace Diastema
             level = 1;
             difficulty = 9;
 
+            fonts = new PrivateFontCollection();
+            string fontPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "font", "maassslicer.italic.ttf"));
+            fonts.AddFontFile(fontPath);
+
+            lblScore.Font = new Font(fonts.Families[0], 14F);
+            lblLevel.Font = new Font(fonts.Families[0], 14F);
+            lblCredits.Font = new Font(fonts.Families[0], 14F);
+            lblGameOver.Font = new Font(fonts.Families[0], 40F);
+
             bgSpeed = 4;
             plSpeed = 4;
             enemySpeed = 4;
@@ -52,13 +64,13 @@ namespace Diastema
 
             munitions = new PictureBox[3];
 
-            Image munition = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "assets", "mud.png")));
+            Image munition = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "assets", "mud.png")));
 
-            Image enemyDK = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "assets", "AT.png")));
-            Image enemyNA = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "assets", "NA.png")));
-            Image enemyAT = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "assets", "DK.png")));
-            Image bossZK = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "assets", "ZK.png")));
-            Image bossKM = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "assets", "KM.png")));
+            Image enemyDK = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "assets", "AT.png")));
+            Image enemyNA = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "assets", "NA.png")));
+            Image enemyAT = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "assets", "DK.png")));
+            Image bossZK = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "assets", "ZK.png")));
+            Image bossKM = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "assets", "KM.png")));
 
             enemies = new PictureBox[10];
 
@@ -98,9 +110,9 @@ namespace Diastema
             shootMedia = new WindowsMediaPlayer();
             explosion = new WindowsMediaPlayer();
 
-            gameMedia.URL = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "bgm", "sample.wav"));
-            shootMedia.URL = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "bgm", "shoot.wav"));
-            explosion.URL = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..", "src", "bgm", "explosion.wav"));
+            gameMedia.URL = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "bgm", "sample.wav"));
+            shootMedia.URL = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "bgm", "shoot.wav"));
+            explosion.URL = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", "bgm", "explosion.wav"));
 
             gameMedia.settings.setMode("loop", true);
             gameMedia.settings.volume = 100;
