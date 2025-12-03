@@ -21,6 +21,7 @@ Movement with arrows or WASD.<br/>Press 'SPACE' to pause.
   * [Sprite Alexis Tsipras](https://commons.wikimedia.org/wiki/File:Alexis_Tsipras_July_2015.jpg): Published by: Sinn Féin on 8 July AD 2015 | License: [Creative Commons 2.0 Generic](https://creativecommons.org/licenses/by/2.0/deed.en) | Edited by: Paraskevas I. Dimitropoulos
 * Background music: Alexandros "[Zakman](https://www.laspi.gr/who/zakman/zakman.htm)" Zakkas (test sample for "Papucci jogging", 30 January AD 2004)
 * Sound effects: Created by [Team17](https://www.team17.com/), the developers behind the video game Worms World Party (AD 2001). All rights reserved by Team17, legal proprietor of the rights to Worms World Party, including but not limited to its assets.
+* Font: Maas Slicer Italic TTF (TrueType Font) | Created by [Peter Wiegel](https://www.peter-wiegel.de/), ca. 2005 | License: Public domain / GPL (General Public License) / OFL (Open Font License)
 * Source code: [Madsy Code](https://www.youtube.com/@Madsycode)
 
 # License
